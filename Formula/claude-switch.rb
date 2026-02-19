@@ -5,13 +5,13 @@
 class ClaudeSwitch < Formula
   desc "CLI tool for managing multiple Claude Code accounts"
   homepage "https://github.com/caeser1996/claude-switch"
-  version "0.9.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caeser1996/claude-switch/releases/download/v0.9.0/claude-switch_0.9.0_darwin_amd64.tar.gz"
-      sha256 "6a719d6d85213a87fe059856871cfdef0dc7fbaeaf4abdb84c3adc195df987d5"
+      url "https://github.com/caeser1996/claude-switch/releases/download/v1.0.0/claude-switch_1.0.0_darwin_amd64.tar.gz"
+      sha256 "20806ef7a068385a99e2684420af2e2a7612bb58919df2e56da5b399d8ed043e"
 
       def install
         bin.install "claude-switch"
@@ -19,8 +19,8 @@ class ClaudeSwitch < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caeser1996/claude-switch/releases/download/v0.9.0/claude-switch_0.9.0_darwin_arm64.tar.gz"
-      sha256 "6bae35f919f84199e68d1e4f1253547be2c471f9614a3f3099e56eacae2752a5"
+      url "https://github.com/caeser1996/claude-switch/releases/download/v1.0.0/claude-switch_1.0.0_darwin_arm64.tar.gz"
+      sha256 "a88e28da32d1a453a83c4849a432b5a9772580caeed7f475dc136383ec81dbd6"
 
       def install
         bin.install "claude-switch"
@@ -31,16 +31,16 @@ class ClaudeSwitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caeser1996/claude-switch/releases/download/v0.9.0/claude-switch_0.9.0_linux_amd64.tar.gz"
-      sha256 "8e8050dd250a5f512736e4ff39c85c1c15e27344655d964719d3399d728a1b8f"
+      url "https://github.com/caeser1996/claude-switch/releases/download/v1.0.0/claude-switch_1.0.0_linux_amd64.tar.gz"
+      sha256 "fcb9b7449c053c6904960f8830604168f311f96a8dfff565a32b7968dba1ad87"
       def install
         bin.install "claude-switch"
         bin.install_symlink "claude-switch" => "cs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caeser1996/claude-switch/releases/download/v0.9.0/claude-switch_0.9.0_linux_arm64.tar.gz"
-      sha256 "f069cfc61404879a11e3fdf3fb6339135b0a48aaa9d2b2fc957d805bedf06287"
+      url "https://github.com/caeser1996/claude-switch/releases/download/v1.0.0/claude-switch_1.0.0_linux_arm64.tar.gz"
+      sha256 "0fc5bee25b914e78c2d99bd33c873ae0969f43f58bf50295e6410e3b1acf90cb"
       def install
         bin.install "claude-switch"
         bin.install_symlink "claude-switch" => "cs"
