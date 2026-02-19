@@ -11,7 +11,7 @@ class ClaudeSwitch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/caeser1996/claude-switch/releases/download/v0.8.0/claude-switch_0.8.0_darwin_amd64.tar.gz"
-      sha256 "ee7ede4a558e47f7d7a724d9f61e833d2e8ff62a53bca0c8dabd11ba779e433b"
+      sha256 "d97842102d761c846697ad8b0d4f067ff3c58f45eb4d31b689d3c4e8f9039686"
 
       def install
         bin.install "claude-switch"
@@ -20,7 +20,7 @@ class ClaudeSwitch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/caeser1996/claude-switch/releases/download/v0.8.0/claude-switch_0.8.0_darwin_arm64.tar.gz"
-      sha256 "a1b052d5479112d37de6fa46de067dfbf6bcb432b7033c20dc491941cb3d3da2"
+      sha256 "136741c527cc1fecf72e8b76b485d0c98170dc57f0faacd8e08e48d7fca46f75"
 
       def install
         bin.install "claude-switch"
@@ -32,7 +32,7 @@ class ClaudeSwitch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/caeser1996/claude-switch/releases/download/v0.8.0/claude-switch_0.8.0_linux_amd64.tar.gz"
-      sha256 "adcfa7abb782163e65d0870327d5ddecbe11ad8caec870b51333cdedad07423a"
+      sha256 "3a6a98b245028b0e4423dbc94c5527ca2f0a1d1b0c2d859b7adcccd91781fc55"
       def install
         bin.install "claude-switch"
         bin.install_symlink "claude-switch" => "cs"
@@ -40,7 +40,7 @@ class ClaudeSwitch < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/caeser1996/claude-switch/releases/download/v0.8.0/claude-switch_0.8.0_linux_arm64.tar.gz"
-      sha256 "d75918bffb29e8e847a8a724b083c794950565530bd5e7d7b8ab98bcbe6471a8"
+      sha256 "d183be14485f8f79a882ce9c93579c921a12daef665229da2ea89999144bc490"
       def install
         bin.install "claude-switch"
         bin.install_symlink "claude-switch" => "cs"
